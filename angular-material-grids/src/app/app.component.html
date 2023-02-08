@@ -1,0 +1,20 @@
+<div>
+
+  <div>
+    <button (click)="addNumbers()">Add more numbers</button>
+    <input [(ngModel)]="xColumn" type="number" (change)="columnChange($event)">
+  </div>
+
+
+
+   <div style="border: 2px; border-color: black;"
+      class="x-grid"
+
+      [ngStyle]="xRowCss"
+    >
+     <div *ngFor="let n of listNumbers"> {{n}} </div>
+   </div>
+
+</div>
+
+
