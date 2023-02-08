@@ -1,15 +1,14 @@
 <div>
 
-  <div>
-    <button (click)="addNumbers()">Add more numbers</button>
-    <input [(ngModel)]="xColumn" type="number" (change)="columnChange($event)">
+  <div class="settings">
+    <button mat-raised-button (click)="addNumbers()">Add More Numbers</button>
+    <input matInput [(ngModel)]="xColumn" type="number" (change)="columnChange($event)">
   </div>
 
 
 
-   <div style="border: 2px; border-color: black;"
-      class="x-grid"
-
+   <div
+      class="x-grid x-grid-container"
       [ngStyle]="xRowCss"
     >
      <div *ngFor="let n of listNumbers"> {{n}} </div>

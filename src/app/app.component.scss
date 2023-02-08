@@ -1,5 +1,21 @@
+.settings {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    padding: 24px;
+    justify-content: center;
+}
+
 .x-grid {
     display: grid;
     grid-auto-flow: column;
-    justify-items: start;
+    justify-items: center;
+    row-gap: 8px;
+    padding: 8px;
+}
+
+.x-grid-container {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
 }
